@@ -1,14 +1,24 @@
 {
   "name": "cesarfelip3/scaffolding",
   "description": "CRUD Generator",
-  "type": "package",
+  "keywords": [
+    "laravel",
+    "scaffolding"
+  ],
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/cesarfelip3/scaffolding/issues",
+    "source": "https://github.com/cesarfelip3/scaffolding"
+  },
   "authors": [
     {
       "name": "Rafael Lunardeli",
       "email": "rafael@slcdevshop.com"
     }
   ],
-  "require": {},
+  "require": {
+    "php": ">=5.5.9"
+  },
   "autoload": {
     "psr-4": {
       "DevSquad\\Scaffolding\\": "src/"
@@ -20,9 +30,10 @@
     }
   },
   "config": {
-    "preferred-install": "dist"
+    "sort-packages": true
   },
   "minimum-stability": "dev",
+  "prefer-stable": true,
   "extra": {
     "laravel": {
       "providers": [
