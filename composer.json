@@ -1,0 +1,36 @@
+{
+  "name": "cesarfelip3/scaffolding",
+  "description": "CRUD Generator",
+  "type": "package",
+  "authors": [
+    {
+      "name": "Rafael Lunardeli",
+      "email": "rafael@slcdevshop.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "DevSquad\\Scaffolding\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "DevSquad\\Scaffolding\\ScaffoldingServiceProvider"
+      ],
+      "aliases": {
+        "Slc": "DevSquad\\Scaffolding\\Slc"
+      }
+    }
+  }
+}
